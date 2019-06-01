@@ -113,7 +113,7 @@ urlpatterns = [
 
 #### account_templates/password_reset_email.html.py
 
-```html
+```
 Someone asked for password reset for email {{ email }}. Follow the link below:
 {{ protocol }}://{{ domain }}{% url 'password_reset_confirm' uidb64=user.profile.unique_id token=token %}
 ```
