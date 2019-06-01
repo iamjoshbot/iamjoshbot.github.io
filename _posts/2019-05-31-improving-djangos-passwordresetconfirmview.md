@@ -115,5 +115,5 @@ urlpatterns = [
 
 ```
 Someone asked for password reset for email {{ email }}. Follow the link below:
-{{ protocol }}://{{ domain }}{% url 'password_reset_confirm' uidb64=user.profile.unique_id token=token %}
+{ { protocol } }://{ { domain } }{ % url 'password_reset_confirm' uidb64=user.profile.unique_id token=token % }
 ```
