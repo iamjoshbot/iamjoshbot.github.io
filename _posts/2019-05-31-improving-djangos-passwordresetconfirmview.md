@@ -12,7 +12,9 @@ tags:
 
 Django provides some fantastic helpers for handling user authentication, password resets and changes.
 
-Upon implementing password reset functionality I found a small part of the built in PasswordResetConfirmView that I wasn't happy with. The default email sent to a user to reset their password contains a url linking to the password reset page. This url, whilst adequately secure, contains the base64 encoded id of the given user.
+I've added password reset functionality to a few websites before and when adding the feature to a site running Django I found a small part of the built in PasswordResetConfirmView that I wasn't happy with. 
+
+The default email that is sent to a user to reset their password contains a url that links to the password reset page. This url, whilst adequately secure, contains the base64 encoded id of the given user.
 
 The problem with showing this id to the user is:
 
