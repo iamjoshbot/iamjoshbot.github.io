@@ -57,6 +57,10 @@ def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
 ```
 
+Once we have the extended User model in place, we can use this to provide a more secure/appropriate ID for an individual user.
+
+The account_id field on the Profile model is a uuid4 type which provides a high degree of randomness and doesn't reveal anything about how many users our site may have. We have set the field to be unique per user.
+
 #### CustomPasswordResetConfirmView.py
 
 ```python
