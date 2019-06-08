@@ -1,6 +1,7 @@
 ---
 title: "Improving Django's PasswordResetConfirmView"
 date: 2019-05-31T20:17:30-04:00
+classes: wide
 categories:
   - Django
 tags:
