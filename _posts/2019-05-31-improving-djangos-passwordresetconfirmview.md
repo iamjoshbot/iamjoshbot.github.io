@@ -91,6 +91,9 @@ class CustomPasswordResetConfirmView(PasswordResetConfirmView):
             return super(CustomPasswordResetConfirmView, self).dispatch(*args, **kwargs)
 ```
 
+The only real difference needed in urls.py is to add our CustomPasswordResetConfirmView as the view for the url instead of the built in PasswordResetConfirmView.
+I have provided the full content of my urls.py file just for context.
+
 #### urls.py
 
 ```python
@@ -128,7 +131,10 @@ urlpatterns = [
 ]
 ```
 
-#### account_templates/password_reset_email.html.py
+The final piece of the puzzle is to change the email sent to the user to reset their password.
+The only difference between the below file and Django's example file is that I have replaced uidb64=user.pk with 'uidb64=user.profile.unique_id'.
+
+#### account_templates/password_reset_email.html
 
 ```
 Someone asked for password reset for email {{ email }}. Follow the link below:
