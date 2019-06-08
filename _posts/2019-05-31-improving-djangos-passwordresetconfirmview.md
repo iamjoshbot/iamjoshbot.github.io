@@ -22,7 +22,7 @@ The problem with showing this id to the user is:
 * It provides to the user the primary key of their user account in the database which could aid in the exploitation of Insecure Direct Object Reference (IDOR).
 
 
-## Solution
+## How to improve PasswordResetConfirmView
 
 Most Django based websites handling user signups will probably need a custom user model.
 
