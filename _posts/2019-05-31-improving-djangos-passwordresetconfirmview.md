@@ -61,6 +61,15 @@ Once we have the extended User model in place, we can use this to provide a more
 
 The account_id field on the Profile model is a uuid4 type which provides a high degree of randomness and doesn't reveal anything about how many users our site may have. We have set the field to be unique per user.
 
+The heart of improving PasswordResetConfirmView is in providing our own that overrides the built in functionality.
+
+
+In the file below (CustomPasswordResetConfirmView.py) I declare a view that overrides the built in view.
+Normally PasswordResetConfirmView takes the base64 encoded user.pk passed to it in the url, decodes it and then looks the user up in the database.
+With our custom view we are taking our account_id passed in the url, looking up the profile it belongs to and then passing the overriden PasswordResetConfirmView the user.pk that it would have normally received from the url.
+
+This method hides the user.pk from the user but doesn't change any of the underlying functionality of the Django source.
+
 #### CustomPasswordResetConfirmView.py
 
 ```python
