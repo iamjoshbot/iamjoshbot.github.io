@@ -24,10 +24,12 @@ The problem with showing this id to the user is:
 
 ## How to improve PasswordResetConfirmView
 
-Most Django based websites handling user signups will probably need a custom user model.
+To improve the built in PasswordResetConfirmView we will need to extend the built in User model with a second Profile model.
+There are other ways of extending the User model, but this way is simple, quick and fits most needs.
+Most Django based websites handling user signups will probably need an extended User model anyway.
 
-My preferred method is to add a seperate Profile model automatically created/updated with the built-in User model.
-See an example models.py below which creates manages this extended user profile. It also provides an account_id field which we can use to improve the built in password reset method.
+The code example (models.py) below sets up a minimal Profile model that is automatically created & updated with the built-in User model.
+The Profile model also provides an account_id field which we will use to improve the built in password reset method.
 
 #### models.py
 
