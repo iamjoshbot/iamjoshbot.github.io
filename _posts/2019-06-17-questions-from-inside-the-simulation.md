@@ -8,4 +8,4 @@ tags:
   - Simulation
 ---
 
-Django provides some fantastic helpers for handling user authentication, password resets and changes.
+During our lives a lot of us have probably experience the fleeting thought of 'Why am I here?', or perhaps 'Why am I?', 'Am I?'
