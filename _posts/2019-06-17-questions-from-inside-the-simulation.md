@@ -8,4 +8,5 @@ tags:
   - Simulation
 ---
 
-During our lives a lot of us have probably experience the fleeting thought of 'Why am I here?', or perhaps 'Why am I?', 'Am I?'
+There are many theories as to why we're here and the origins of the universe.
+One that I am most fond of is the theory that we are some part in a computer simulation. Whilst I have no evidence and don't necessarily believe it, I find it interesting none the less.
