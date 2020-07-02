@@ -138,6 +138,8 @@ The only difference between the below file and Django's example file is that I h
 #### account_templates/password_reset_email.html
 
 ```
+{% raw %}
 Someone asked for password reset for email {{ email }}. Follow the link below:
 {{ protocol }}://{{ domain }}{% url 'password_reset_confirm' uidb64=user.profile.account_id token=token %}
+{% endraw %}
 ```
