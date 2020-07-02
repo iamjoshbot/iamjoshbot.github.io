@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Josh"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Programmer, iOS Developer, Hacker, Bodger, ❤️ InfoSec & Cyber Security"
+  bio    : "Programmer, iOS & Django Developer, Bodger"
   links:
 
 footer:
