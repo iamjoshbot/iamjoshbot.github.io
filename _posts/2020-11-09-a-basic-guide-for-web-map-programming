@@ -46,14 +46,8 @@ The identifier used to reference the Web Mercator Projection
 For the purposes of what we need to know, these are the same thing.
 
 
-
-
 ## Making sense of the jargon
 When storing geospacial information in a database to display on a web-based map, you will need to be aware of which reference system your coordinates are based on and the map will be displayed in.
 
-Most coordinates used on the web and stored in databases look something like this 51.464794, 0.258937 (these point to the QE II Bridge).
+Most coordinates used on the web and look something like this: 51.464794, 0.258937 (these point to the QE II Bridge).
 These coordinates are typically based on a coordinate reference system that uses the WGS84 datum, AKA EPSG:4326.
-
-
-
-
