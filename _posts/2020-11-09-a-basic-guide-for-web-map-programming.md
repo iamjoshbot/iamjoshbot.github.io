@@ -18,6 +18,8 @@ When building a web application that needs to display mapping data, calculate di
 
 Here is a brief explanation/cheat sheet about some of the things you will need to know.
 
+<img src="https://static.breakoutapp.com/images/www/features-2.png" width="1px" height="1px"/>
+
 ## Definitions of terms
 
 Ellipsoid
